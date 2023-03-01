@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">JazzGreatest</string>
     <string name="title">azzGreatest</string>
+    <string name="article_title">10 Jazz Legends You Should Know</string>
+    <string name="intro">    The legend amongst jazz musicians ever are the most talented musicians ever. Period. Even though jazz has been around for well over a century, it’s still viewed by some people as the coolest, hippest music there is. That’s because in jazz, a musical language whose essence is spontaneous creation, anything can happen. What’s exciting is its unpredictability and because of that, jazz has never stood still and continues to evolve and grow, reflecting the lives and times of its myriad creators.</string>
+    <string name="duke_ellington">Duke Ellington</string>
+    <string name="year_active">1914–1963</string>
+    <string name="instrument_label">Instrument:</string>
+    <string name="piano">Piano</string>
 </resources>
