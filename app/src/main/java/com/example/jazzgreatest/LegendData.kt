@@ -111,9 +111,9 @@ object LegendData {
         R.drawable.miles_davies,
         R.drawable.billy_strayhorn,
         R.drawable.thad_jones,
+        R.drawable.charles_mingus,
         R.drawable.bill_evans,
         R.drawable.count_basie,
-        R.drawable.charles_mingus,
         R.drawable.mary_lou,
         R.drawable.chick_corea
     )
