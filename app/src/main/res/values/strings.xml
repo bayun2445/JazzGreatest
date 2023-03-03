@@ -9,4 +9,16 @@
     <string name="piano">Piano</string>
     <string name="my_name">Bayu Nugroho</string>
     <string name="my_email">bayun2445@gmail.com</string>
+    <string name="name">Duke Ellington</string>
+    <string name="share">Share</string>
+    <string name="birth_name">Birth Name:</string>
+    <string name="born">Born:</string>
+    <string name="died">Died:</string>
+    <string name="years_active">Years Active:</string>
+    <string name="instrument">Instrument:</string>
+    <string name="popular_song">Popular Song:</string>
+    <string name="edward_kennedy_ellington">Edward Kennedy Ellington</string>
+    <string name="date">April, 19 1899</string>
+    <string name="years">1943–1980</string>
+    <string name="it_don_t_mean_a_thing">It Don\'t Mean A Thing</string>
 </resources>
