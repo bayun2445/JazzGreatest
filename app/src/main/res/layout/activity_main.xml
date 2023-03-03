@@ -4,15 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_beige_gradient"
     tools:context=".MainActivity">
 
-    <TextView
+    <include
+        android:id="@+id/top_action_bar"
+        layout="@layout/custom_action_bar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_about"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@null"
+        android:minWidth="52dp"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_baseline_person_24"
+        app:layout_constraintBottom_toBottomOf="@+id/top_action_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_action_bar"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+
+    <TextView
+        android:id="@+id/tv_article_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/lora_bold"
+        android:text="@string/article_title"
+        android:textColor="@color/deep_brown"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/top_action_bar" />
+
+    <TextView
+        android:id="@+id/tv_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:justificationMode="inter_word"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        android:text="@string/intro"
+        android:textColor="@color/deep_brown"
+        android:textSize="16sp"
+        android:fontFamily="@font/lora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_article_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_legend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_legend_card_view"
+        tools:itemCount="10"
+        app:layout_constraintTop_toBottomOf="@id/tv_intro"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
