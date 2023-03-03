@@ -104,4 +104,50 @@ object LegendData {
         "Mary Lou Williams was an influential American jazz pianist, composer, and arranger who played a key role in the development of bebop and other modern jazz styles. Known for her exceptional piano skills and innovative compositions, Williams collaborated with many renowned jazz musicians and recorded numerous highly-regarded albums, such as \"Zodiac Suite.\" Additionally, she served as an important mentor and teacher to other musicians, particularly women, and played an instrumental role in shaping the jazz scene of her time.",
         "Chick Corea was an American jazz pianist, composer, and bandleader who was one of the most influential figures in the development of jazz fusion during the late 20th century. Corea was known for his virtuosic keyboard playing, his innovative compositions that blended elements of jazz, rock, and classical music, and his leadership of several successful ensembles. He recorded numerous acclaimed albums throughout his career, including \"Return to Forever,\" and won 23 Grammy awards. Corea passed away in 2021 but his legacy continues to inspire musicians worldwide."
     )
+
+    private val photos = arrayOf(
+        R.drawable.duke_ellington,
+        R.drawable.thelonious_monk,
+        R.drawable.miles_davies,
+        R.drawable.billy_strayhorn,
+        R.drawable.thad_jones,
+        R.drawable.bill_evans,
+        R.drawable.count_basie,
+        R.drawable.charles_mingus,
+        R.drawable.mary_lou,
+        R.drawable.chick_corea
+    )
+
+    val listLegend: ArrayList<Legend>
+        get() {
+            val list = arrayListOf<Legend>()
+
+            for (pos in names.indices) {
+                val name = names[pos]
+                val birthName = birthNames[pos]
+                val born = bornDates[pos]
+                val died = diedDates[pos]
+                val yearsActive = yearActive[pos]
+                val instrument = instruments[pos]
+                val popularSong = popularSongs[pos]
+                val summary = summaries[pos]
+                val photo = photos[pos]
+
+                val legend = Legend(
+                    name,
+                    birthName,
+                    born,
+                    died,
+                    yearsActive,
+                    instrument,
+                    popularSong,
+                    summary,
+                    photo
+                )
+
+                list.add(legend)
+            }
+
+            return list
+        }
 }

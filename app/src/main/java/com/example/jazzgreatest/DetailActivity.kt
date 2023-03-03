@@ -11,5 +11,13 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setButtonBackClickListener()
+    }
+
+    private fun setButtonBackClickListener() {
+        binding.btnBack.setOnClickListener {
+            finish()
+        }
     }
 }
