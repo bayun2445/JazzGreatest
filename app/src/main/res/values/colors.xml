@@ -15,4 +15,9 @@
     <color name="mustard_yellow">#DDBB3D</color>
     <color name="dark_green">#1B4332</color>
     <color name="terracotta">#B76E79</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
 </resources>
